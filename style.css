@@ -17,11 +17,10 @@ main {
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 90%;
-    max-width: 500px;
+    width: min(500px, 90%);
     height: 90%;
     background-color: hsl(0, 0%, 100%);
-    border-radius: 0.5rem;
+    border-radius: 0.5em;
     overflow: hidden;
 }
 
@@ -40,12 +39,12 @@ main {
     display: grid;
     width: 100%;
     height: 60%;
-    padding: 1.5rem;
+    padding: 1.5em;
 }
 
 p {
     font-family: "Montserrat", sans-serif;
-    font-size: 0.9rem;
+    font-size: clamp(0.9em, 2vh, 1.5em);
     font-weight: 500;
     color: hsl(228, 12%, 48%);
 }
@@ -53,6 +52,7 @@ p {
 h1, #final-price {
     font-family: "Fraunces", serif;
     font-weight: 700;
+    font-size: clamp(2em, 4vh, 3em);
 }
 
 #prices {
@@ -61,7 +61,7 @@ h1, #final-price {
 }
 
 #final-price {
-    font-size: 2rem;
+    font-size: 2em;
     color: hsl(158, 36%, 37%);
 }
 
@@ -71,23 +71,23 @@ h1, #final-price {
 }
 
 button {
-    margin-top: 1rem;
-    padding: 0.7rem;
+    margin-top: 1em;
+    padding: 0.7em;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Montserrat", sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.9em;
     font-weight: 700;
     color: hsl(0, 0%, 100%);
-    border-radius: 0.5rem;
+    border-radius: 0.5em;
     background-color: hsl(158, 36%, 37%);
     border: none;
     transition: background-color 0.5s ease-in-out;
 }
 
 button > img {
-    margin-right: 1rem;
+    margin-right: 1em;
 }
 
 button:hover {
