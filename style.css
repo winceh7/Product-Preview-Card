@@ -17,7 +17,7 @@ main {
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: min(500px, 90%);
+    width: min(600px, 90%);
     height: 90%;
     background-color: hsl(0, 0%, 100%);
     border-radius: 0.5em;
@@ -44,7 +44,7 @@ main {
 
 p {
     font-family: "Montserrat", sans-serif;
-    font-size: clamp(0.9em, 2vh, 1.5em);
+    font-size: clamp(0.9em, 1.5vh, 1.5em);
     font-weight: 500;
     color: hsl(228, 12%, 48%);
 }
@@ -92,4 +92,31 @@ button > img {
 
 button:hover {
     background-color: hsl(158, 42%, 18%);
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        flex-direction: row;
+        height: 500px;
+    }
+
+    #image-container, #product-info {
+        height: 100%;
+        width: 50%;
+    }
+
+    #image-container > img {
+        content: url(./images/image-product-desktop.jpg);
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #product-info {
+        padding: 2em;
+    }
+
+    button {
+        padding: 0;
+    }
 }
