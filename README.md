@@ -62,6 +62,5 @@ Continue practicing my skills and improve my workflow, gather best practices and
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- GitHub - [winceh7](https://github.com/winceh7)
+- Frontend Mentor - [@winceh7](https://www.frontendmentor.io/profile/winceh7)
