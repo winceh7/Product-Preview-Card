@@ -18,7 +18,7 @@ main {
     flex-direction: column;
     margin: auto;
     width: min(600px, 90%);
-    height: 90%;
+    height: min(700px, 90%);
     background-color: hsl(0, 0%, 100%);
     border-radius: 0.5em;
     overflow: hidden;
@@ -44,7 +44,7 @@ main {
 
 p {
     font-family: "Montserrat", sans-serif;
-    font-size: clamp(0.9em, 1.5vh, 1.5em);
+    font-size: 14px;
     font-weight: 500;
     color: hsl(228, 12%, 48%);
 }
@@ -52,7 +52,7 @@ p {
 h1, #final-price {
     font-family: "Fraunces", serif;
     font-weight: 700;
-    font-size: clamp(2em, 4vh, 3em);
+    font-size: 32px;
 }
 
 #prices {
@@ -61,7 +61,6 @@ h1, #final-price {
 }
 
 #final-price {
-    font-size: 2em;
     color: hsl(158, 36%, 37%);
 }
 
